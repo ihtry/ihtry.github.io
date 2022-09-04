@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hexo搭建个人博客（实战）</title>
+    <url>/posts/1863780867.html</url>
+    <content><![CDATA[<blockquote>
+<p>今天闲来无事，无意中刷视频看见了一个博主发布的<strong>Hexo</strong>的一个插件，然后就突发奇想来搭建一个个人博客，话不多说开干</p>
+</blockquote>
+<hr>
+<h3 id="环境要求（默认已经安装好）"><a href="#环境要求（默认已经安装好）" class="headerlink" title="环境要求（默认已经安装好）"></a>环境要求（默认已经安装好）</h3><ul>
+<li>window10</li>
+<li><a href="https://nodejs.org/">Node.js</a> 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本</li>
+<li><a href="https://git-scm.com/">Git</a></li>
+</ul>
+<hr>
+<h4 id="1-安装hexo"><a href="#1-安装hexo" class="headerlink" title="1. 安装hexo"></a>1. 安装hexo</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="2-初始化项目"><a href="#2-初始化项目" class="headerlink" title="2. 初始化项目"></a>2. 初始化项目</h4><p><code>推荐使用</code><strong>npx</strong><code>指令,windows环境下</code><strong>hexo</strong><code>比较麻烦(个人喜好)</code></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 初始化文件夹</span>
+npx hexo init <span class="token operator">&lt;</span>folder<span class="token operator">></span>
+<span class="token comment"># 切换到指定目录</span>
+<span class="token builtin class-name">cd</span> <span class="token operator">&lt;</span>folder<span class="token operator">></span>
+<span class="token comment"># 安装</span>
+<span class="token function">npm</span> <span class="token function">install</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="3-配置-config-yml"><a href="#3-配置-config-yml" class="headerlink" title="3. 配置_config.yml"></a>3. 配置<code>_config.yml</code></h4><blockquote>
+<p>官方文档：<a href="https://hexo.io/zh-cn/docs/configuration">传送门</a></p>
+<p>这里的配置详细的有很多,具体就不多讲述了</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>title</code></td>
+<td align="center">网站标题</td>
+</tr>
+<tr>
+<td align="center"><code>subtitle</code></td>
+<td align="center">网站副标题</td>
+</tr>
+<tr>
+<td align="center"><code>description</code></td>
+<td align="center">网站描述</td>
+</tr>
+<tr>
+<td align="center"><code>keywords</code></td>
+<td align="center">网站的关键词。支持多个关键词。</td>
+</tr>
+<tr>
+<td align="center"><code>author</code></td>
+<td align="center">您的名字</td>
+</tr>
+<tr>
+<td align="center"><code>language</code></td>
+<td align="center">网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 <code>zh-Hans</code>和 <code>zh-CN</code>。</td>
+</tr>
+<tr>
+<td align="center"><code>timezone</code></td>
+<td align="center">网站时区。Hexo 默认使用您电脑的时区。请参考 <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">时区列表</a> 进行设置，如 <code>America/New_York</code>, <code>Japan</code>, 和 <code>UTC</code> 。一般的，对于中国大陆地区可以使用 <code>Asia/Shanghai</code></td>
+</tr>
+</tbody></table>
+<h4 id="4-本地运行测试"><a href="#4-本地运行测试" class="headerlink" title="4. 本地运行测试"></a>4. 本地运行测试</h4><blockquote>
+<p>访问本地路径：<a href="http://localhost:4000/">http://localhost:4000</a></p>
+</blockquote>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npx hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<p>本文链接 <a href="https://blog.ihtry.com/posts/1863780867.html">https://blog.ihtry.com/posts/1863780867.html</a> </p>
+]]></content>
+      <categories>
+        <category>实战</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>Github</tag>
+        <tag>网站</tag>
+      </tags>
+  </entry>
+</search>
