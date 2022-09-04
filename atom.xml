@@ -6,7 +6,7 @@
   <link href="https://blog.ihtry.com/atom.xml" rel="self"/>
   
   <link href="https://blog.ihtry.com/"/>
-  <updated>2022-09-04T05:04:40.412Z</updated>
+  <updated>2022-09-04T14:23:15.587Z</updated>
   <id>https://blog.ihtry.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>随记_Gitbook运行出错解决</title>
+    <link href="https://blog.ihtry.com/posts/361235684.html"/>
+    <id>https://blog.ihtry.com/posts/361235684.html</id>
+    <published>2022-09-04T14:11:04.000Z</published>
+    <updated>2022-09-04T14:23:15.587Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;随记-Gitbook执行cb-apply-is-not-a-function&quot;&gt;&lt;a href=&quot;#随记-Gitbook执行cb-apply-is-not-a-function&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="随记" scheme="https://blog.ihtry.com/categories/%E9%9A%8F%E8%AE%B0/"/>
+    
+    
+    <category term="随记" scheme="https://blog.ihtry.com/tags/%E9%9A%8F%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Typora永久激活</title>
     <link href="https://blog.ihtry.com/posts/868386938.html"/>
     <id>https://blog.ihtry.com/posts/868386938.html</id>
     <published>2022-09-04T04:41:12.000Z</published>
-    <updated>2022-09-04T05:04:40.412Z</updated>
+    <updated>2022-09-04T14:22:28.418Z</updated>
     
     
       
