@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>随记-SpringBoot创建遇到的问题</title>
+    <url>/posts/2302713181.html</url>
+    <content><![CDATA[<blockquote>
+<p>今天第一次接触<strong>SpringBoot</strong>，就遇到了问题，下面给大家分享一下，避一下坑</p>
+</blockquote>
+<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><blockquote>
+<p><code>idea2021</code>在创建<strong>SpringBoot</strong>项目的时候目录结构为普通目录</p>
+</blockquote>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929212104071.png" alt="如图"></p>
+<blockquote>
+<p>这里我们可以看到<code>java</code>和<code>resources</code>目录为普通目录，这样就会导致我们运行不了这个<code>SpringBoot</code>项目</p>
+</blockquote>
+<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><blockquote>
+<p>最后我通过百度等方式发现问题所在是因为我的<code>maven</code>版本和我的idea版本不兼容，然后我就换成了低版本</p>
+<p>版本信息：</p>
+<ul>
+<li>idea 2021</li>
+<li>maven 3.8.6</li>
+</ul>
+<p>这里的版本是不兼容的，所以导致一系列的问题，解决方法如下</p>
+</blockquote>
+<ul>
+<li>修改idea默认的maven版本</li>
+</ul>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929212924999.png" alt="1"></p>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929213041685.png" alt="2"></p>
+<ul>
+<li>重启idea，新建项目即可</li>
+</ul>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929213308922.png" alt="成功"></p>
+<h3 id="成功"><a href="#成功" class="headerlink" title="成功"></a>成功</h3><p><img src="https://hexo.cdn.ihtry.com/images/image-20220929213436341.png" alt="success"></p>
+<p>本文链接 <a href="https://blog.ihtry.com/posts/2302713181.html">https://blog.ihtry.com/posts/2302713181.html</a> </p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>随记</tag>
+        <tag>SpringBoot</tag>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>随记_Gitbook运行出错解决</title>
     <url>/posts/361235684.html</url>
     <content><![CDATA[<h2 id="随记-Gitbook执行cb-apply-is-not-a-function"><a href="#随记-Gitbook执行cb-apply-is-not-a-function" class="headerlink" title="随记_Gitbook执行cb.apply is not a function"></a>随记_Gitbook执行cb.apply is not a function</h2><ul>
