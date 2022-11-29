@@ -6,7 +6,7 @@
   <link href="https://blog.ihtry.com/atom.xml" rel="self"/>
   
   <link href="https://blog.ihtry.com/"/>
-  <updated>2022-09-29T13:34:50.464Z</updated>
+  <updated>2022-11-29T14:20:22.693Z</updated>
   <id>https://blog.ihtry.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Trojan安装教程</title>
+    <link href="https://blog.ihtry.com/posts/2160956791.html"/>
+    <id>https://blog.ihtry.com/posts/2160956791.html</id>
+    <published>2022-11-29T14:11:55.000Z</published>
+    <updated>2022-11-29T14:20:22.693Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Trojan安装方法&quot;&gt;&lt;a href=&quot;#Trojan安装方法&quot; class=&quot;headerlink&quot; title=&quot;Trojan安装方法&quot;&gt;&lt;/a&gt;Trojan安装方法&lt;/h2&gt;&lt;h3 id=&quot;运行安装脚本&quot;&gt;&lt;a href=&quot;#运行安装脚本&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="教程" scheme="https://blog.ihtry.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Trojan" scheme="https://blog.ihtry.com/tags/Trojan/"/>
+    
+    <category term="小火箭" scheme="https://blog.ihtry.com/tags/%E5%B0%8F%E7%81%AB%E7%AE%AD/"/>
+    
+  </entry>
   
   <entry>
     <title>随记-SpringBoot创建遇到的问题</title>

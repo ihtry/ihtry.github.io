@@ -1,85 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>随记-SpringBoot创建遇到的问题</title>
-    <url>/posts/2302713181.html</url>
-    <content><![CDATA[<blockquote>
-<p>今天第一次接触<strong>SpringBoot</strong>，就遇到了问题，下面给大家分享一下，避一下坑</p>
-</blockquote>
-<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><blockquote>
-<p><code>idea2021</code>在创建<strong>SpringBoot</strong>项目的时候目录结构为普通目录</p>
-</blockquote>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929212104071.png" alt="如图"></p>
-<blockquote>
-<p>这里我们可以看到<code>java</code>和<code>resources</code>目录为普通目录，这样就会导致我们运行不了这个<code>SpringBoot</code>项目</p>
-</blockquote>
-<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><blockquote>
-<p>最后我通过百度等方式发现问题所在是因为我的<code>maven</code>版本和我的idea版本不兼容，然后我就换成了低版本</p>
-<p>版本信息：</p>
-<ul>
-<li>idea 2021</li>
-<li>maven 3.8.6</li>
-</ul>
-<p>这里的版本是不兼容的，所以导致一系列的问题，解决方法如下</p>
-</blockquote>
-<ul>
-<li>修改idea默认的maven版本</li>
-</ul>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929212924999.png" alt="1"></p>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929213041685.png" alt="2"></p>
-<ul>
-<li>重启idea，新建项目即可</li>
-</ul>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929213308922.png" alt="成功"></p>
-<h3 id="成功"><a href="#成功" class="headerlink" title="成功"></a>成功</h3><p><img src="https://hexo.cdn.ihtry.com/images/image-20220929213436341.png" alt="success"></p>
-<p>本文链接 <a href="https://blog.ihtry.com/posts/2302713181.html">https://blog.ihtry.com/posts/2302713181.html</a> </p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>随记</tag>
-        <tag>SpringBoot</tag>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>随记_Gitbook运行出错解决</title>
-    <url>/posts/361235684.html</url>
-    <content><![CDATA[<h2 id="随记-Gitbook执行cb-apply-is-not-a-function"><a href="#随记-Gitbook执行cb-apply-is-not-a-function" class="headerlink" title="随记_Gitbook执行cb.apply is not a function"></a>随记_Gitbook执行cb.apply is not a function</h2><ul>
-<li><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3></li>
-</ul>
-<blockquote>
-<p>windows下运行<code>gitbook serve</code>提示出错</p>
-</blockquote>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904221300091.png" alt="问题"></p>
-<ul>
-<li><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3></li>
-</ul>
-<blockquote>
-<ol>
-<li>找到出错文件:<code>E:\develop\nodejs\node_global\node_modules\gitbook-cli\node_modules\npm\node_modules\graceful-fs\polyfills.js</code></li>
-<li>将62行-64行代码注释掉</li>
-</ol>
-</blockquote>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904221639683.png" alt="方法"></p>
-<ul>
-<li><h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3></li>
-</ul>
-<blockquote>
-<p>再次执行<code>gitbook serve</code>即可</p>
-</blockquote>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904221758291.png" alt="解决"></p>
-<p>本文链接 <a href="https://blog.ihtry.com/posts/361235684.html">https://blog.ihtry.com/posts/361235684.html</a> </p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>随记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Typora永久激活</title>
     <url>/posts/868386938.html</url>
     <content><![CDATA[<h1 id="Typora-永久激活-补丁"><a href="#Typora-永久激活-补丁" class="headerlink" title="Typora 永久激活(补丁)"></a>Typora 永久激活(补丁)</h1><hr>
@@ -123,6 +44,85 @@
         <tag>Typora</tag>
         <tag>Markdown</tag>
         <tag>破解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>随记_Gitbook运行出错解决</title>
+    <url>/posts/361235684.html</url>
+    <content><![CDATA[<h2 id="随记-Gitbook执行cb-apply-is-not-a-function"><a href="#随记-Gitbook执行cb-apply-is-not-a-function" class="headerlink" title="随记_Gitbook执行cb.apply is not a function"></a>随记_Gitbook执行cb.apply is not a function</h2><ul>
+<li><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3></li>
+</ul>
+<blockquote>
+<p>windows下运行<code>gitbook serve</code>提示出错</p>
+</blockquote>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904221300091.png" alt="问题"></p>
+<ul>
+<li><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3></li>
+</ul>
+<blockquote>
+<ol>
+<li>找到出错文件:<code>E:\develop\nodejs\node_global\node_modules\gitbook-cli\node_modules\npm\node_modules\graceful-fs\polyfills.js</code></li>
+<li>将62行-64行代码注释掉</li>
+</ol>
+</blockquote>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904221639683.png" alt="方法"></p>
+<ul>
+<li><h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3></li>
+</ul>
+<blockquote>
+<p>再次执行<code>gitbook serve</code>即可</p>
+</blockquote>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904221758291.png" alt="解决"></p>
+<p>本文链接 <a href="https://blog.ihtry.com/posts/361235684.html">https://blog.ihtry.com/posts/361235684.html</a> </p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>随记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>随记-SpringBoot创建遇到的问题</title>
+    <url>/posts/2302713181.html</url>
+    <content><![CDATA[<blockquote>
+<p>今天第一次接触<strong>SpringBoot</strong>，就遇到了问题，下面给大家分享一下，避一下坑</p>
+</blockquote>
+<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><blockquote>
+<p><code>idea2021</code>在创建<strong>SpringBoot</strong>项目的时候目录结构为普通目录</p>
+</blockquote>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929212104071.png" alt="如图"></p>
+<blockquote>
+<p>这里我们可以看到<code>java</code>和<code>resources</code>目录为普通目录，这样就会导致我们运行不了这个<code>SpringBoot</code>项目</p>
+</blockquote>
+<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><blockquote>
+<p>最后我通过百度等方式发现问题所在是因为我的<code>maven</code>版本和我的idea版本不兼容，然后我就换成了低版本</p>
+<p>版本信息：</p>
+<ul>
+<li>idea 2021</li>
+<li>maven 3.8.6</li>
+</ul>
+<p>这里的版本是不兼容的，所以导致一系列的问题，解决方法如下</p>
+</blockquote>
+<ul>
+<li>修改idea默认的maven版本</li>
+</ul>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929212924999.png" alt="1"></p>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929213041685.png" alt="2"></p>
+<ul>
+<li>重启idea，新建项目即可</li>
+</ul>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929213308922.png" alt="成功"></p>
+<h3 id="成功"><a href="#成功" class="headerlink" title="成功"></a>成功</h3><p><img src="https://hexo.cdn.ihtry.com/images/image-20220929213436341.png" alt="success"></p>
+<p>本文链接 <a href="https://blog.ihtry.com/posts/2302713181.html">https://blog.ihtry.com/posts/2302713181.html</a> </p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>随记</tag>
+        <tag>SpringBoot</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -203,6 +203,36 @@ npx hexo init <span class="token operator">&lt;</span>folder<span class="token o
         <tag>hexo</tag>
         <tag>Github</tag>
         <tag>网站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Trojan安装教程</title>
+    <url>/posts/2160956791.html</url>
+    <content><![CDATA[<h2 id="Trojan安装方法"><a href="#Trojan安装方法" class="headerlink" title="Trojan安装方法"></a>Trojan安装方法</h2><h3 id="运行安装脚本"><a href="#运行安装脚本" class="headerlink" title="运行安装脚本"></a>运行安装脚本</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">source</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> https://git.io/trojan-install<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="卸载方法"><a href="#卸载方法" class="headerlink" title="卸载方法"></a>卸载方法</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">source</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> https://git.io/trojan-install<span class="token punctuation">)</span> <span class="token parameter variable">--remove</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="安装BBR加速"><a href="#安装BBR加速" class="headerlink" title="安装BBR加速"></a>安装BBR加速</h3><ul>
+<li>推荐使用<code>wget</code></li>
+</ul>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">yum <span class="token parameter variable">-y</span> <span class="token function">install</span> <span class="token function">wget</span> <span class="token comment"># centos</span>
+<span class="token function">apt-get</span> <span class="token function">install</span> <span class="token function">wget</span>  <span class="token comment"># Debian</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<ul>
+<li>运行脚本</li>
+</ul>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> <span class="token parameter variable">-N</span> --no-check-certificate <span class="token string">"https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"</span> <span class="token operator">&amp;&amp;</span> <span class="token function">chmod</span> +x tcp.sh <span class="token operator">&amp;&amp;</span> ./tcp.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<blockquote>
+<p>安装失败重新运行安装脚本即可</p>
+</blockquote>
+<p>本文链接 <a href="https://blog.ihtry.com/posts/2160956791.html">https://blog.ihtry.com/posts/2160956791.html</a> </p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Trojan</tag>
+        <tag>小火箭</tag>
       </tags>
   </entry>
 </search>

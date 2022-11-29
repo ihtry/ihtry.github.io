@@ -15,7 +15,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>归档 |  卫梦博客</title>
+      <title>Trojan安装教程 |  卫梦博客</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -67,158 +67,203 @@ var _hmt = _hmt || [];
       
     <main class="content on">
       <section class="outer">
+  <article
+  id="post-Trojan安装教程"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Trojan安装教程
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/posts/2160956791.html" class="article-date">
+  <time datetime="2022-11-29T14:11:55.000Z" itemprop="datePublished">2022-11-29</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+  </div>
   
-  <ul class="ads">
-    
-        <li>
-            <a target="_blank" rel="noopener" href="https://s.click.taobao.com/zRHxnTu">
-                <img src="/images/ad/1.jpg" width="300" alt="超级红包等你领">
-            </a>
-        </li>
-    
-        <li>
-            <a target="_blank" rel="noopener" href="https://s.click.taobao.com/2Y9D3Uu">
-                <img src="/images/ad/2.png" width="300" alt="一分包邮购">
-            </a>
-        </li>
-    
-        <li>
-            <a target="_blank" rel="noopener" href="https://s.click.ele.me/Eb8D3Uu">
-                <img src="/images/ad/3.png" width="300" alt="饿了么补贴">
-            </a>
-        </li>
-    
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">107</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">1 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="Trojan安装方法"><a href="#Trojan安装方法" class="headerlink" title="Trojan安装方法"></a>Trojan安装方法</h2><h3 id="运行安装脚本"><a href="#运行安装脚本" class="headerlink" title="运行安装脚本"></a>运行安装脚本</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">source</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> https://git.io/trojan-install<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="卸载方法"><a href="#卸载方法" class="headerlink" title="卸载方法"></a>卸载方法</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">source</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> https://git.io/trojan-install<span class="token punctuation">)</span> <span class="token parameter variable">--remove</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="安装BBR加速"><a href="#安装BBR加速" class="headerlink" title="安装BBR加速"></a>安装BBR加速</h3><ul>
+<li>推荐使用<code>wget</code></li>
 </ul>
-  
-  
-  <article class="articles">
-    
-    
-    <h1 class="page-type-title">归档</h1>
-    
-    
-  
-  
-  
-  
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2022" class="archive-year">2022</a>
-    </div>
-    <div class="archives">
-      
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/posts/2160956791.html" class="archive-article-date">
-  <time datetime="2022-11-29T14:11:55.000Z" itemprop="datePublished">11/29</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/posts/2160956791.html"
-    >Trojan安装教程</a> 
-</h2>
- 
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">yum <span class="token parameter variable">-y</span> <span class="token function">install</span> <span class="token function">wget</span> <span class="token comment"># centos</span>
+<span class="token function">apt-get</span> <span class="token function">install</span> <span class="token function">wget</span>  <span class="token comment"># Debian</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<ul>
+<li>运行脚本</li>
+</ul>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> <span class="token parameter variable">-N</span> --no-check-certificate <span class="token string">"https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"</span> <span class="token operator">&amp;&amp;</span> <span class="token function">chmod</span> +x tcp.sh <span class="token operator">&amp;&amp;</span> ./tcp.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/posts/2302713181.html" class="archive-article-date">
-  <time datetime="2022-09-29T13:12:56.000Z" itemprop="datePublished">09/29</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/posts/2302713181.html"
-    >随记-SpringBoot创建遇到的问题</a> 
-</h2>
- 
 
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/posts/361235684.html" class="archive-article-date">
-  <time datetime="2022-09-04T14:11:04.000Z" itemprop="datePublished">09/04</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/posts/361235684.html"
-    >随记_Gitbook运行出错解决</a> 
-</h2>
+<blockquote>
+<p>安装失败重新运行安装脚本即可</p>
+</blockquote>
+<p>本文链接 <a href="https://blog.ihtry.com/posts/2160956791.html">https://blog.ihtry.com/posts/2160956791.html</a> </p>
  
-
-    </header>
-    
-    
-  </div>
-</article>
+      <!-- reward -->
       
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/posts/868386938.html" class="archive-article-date">
-  <time datetime="2022-09-04T04:41:12.000Z" itemprop="datePublished">09/04</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/posts/868386938.html"
-    >Typora永久激活</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/posts/1863780867.html" class="archive-article-date">
-  <time datetime="2022-09-03T16:58:00.000Z" itemprop="datePublished">09/04</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/posts/1863780867.html"
-    >Hexo搭建个人博客（实战）</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
       
     </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.ihtry.com/posts/2160956791.html" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Trojan/" rel="tag">Trojan</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B0%8F%E7%81%AB%E7%AE%AD/" rel="tag">小火箭</a></li></ul>
+
+    </footer>
   </div>
-  
-  
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/posts/2302713181.html" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">随记-SpringBoot创建遇到的问题</div>
+      </a>
+    
+  </nav>
 
   
+   
+<div class="gitalk" id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css">
+
+
+<script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script>
+
+
+<script src="https://cdn.staticfile.org/blueimp-md5/2.19.0/js/md5.min.js"></script>
+
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '0ae3af4cf8b80486b066',
+    clientSecret: '314f8f6cd257e3f380fa3031ddf6369a4941283b',
+    repo: 'gitalk',
+    owner: 'ihtry',
+    admin: ['ihtry'],
+    // id: location.pathname,      // Ensure uniqueness and length less than 50
+    id: md5(location.pathname),
+    distractionFreeMode: false,  // Facebook-like distraction free mode
+    pagerDirection: 'last'
+  })
+
+  gitalk.render('gitalk-container')
+</script>
+
+  
+    
+</article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -362,6 +407,22 @@ var _hmt = _hmt || [];
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
 
 <script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
 <link
