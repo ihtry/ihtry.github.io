@@ -1,131 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Typora永久激活</title>
-    <url>/posts/868386938.html</url>
-    <content><![CDATA[<h1 id="Typora-永久激活-补丁"><a href="#Typora-永久激活-补丁" class="headerlink" title="Typora 永久激活(补丁)"></a>Typora 永久激活(补丁)</h1><hr>
-<blockquote>
-<p>Typora 是一款<strong>支持实时预览的 Markdown 文本编辑器</strong>。它有 OS X、Windows、Linux 三个平台的版本，并且由于仍在测试中，是<strong>完全免费</strong>的。</p>
-<p> Typora 首先是一个 Markdown 文本编辑器，它支持且仅支持 Markdown 语法的文本编辑。</p>
-</blockquote>
-<ul>
-<li><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3></li>
-</ul>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904124819576.png" alt="image-20220904124819576"></p>
-<blockquote>
-<p>点击执行文件，傻瓜式下一步安装即可</p>
-</blockquote>
-<ul>
-<li><h3 id="替换文件"><a href="#替换文件" class="headerlink" title="替换文件"></a>替换文件</h3></li>
-</ul>
-<ol>
-<li><h6 id="右键桌面Typora图标，打开文件所在位置"><a href="#右键桌面Typora图标，打开文件所在位置" class="headerlink" title="右键桌面Typora图标，打开文件所在位置"></a><strong>右键</strong>桌面<em>Typora</em>图标，打开文件所在位置</h6></li>
-</ol>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904125545766.png" alt="替换文件"></p>
-<ol start="2">
-<li><h6 id="将winmm-dll文件复制到目标文件夹下"><a href="#将winmm-dll文件复制到目标文件夹下" class="headerlink" title="将winmm.dll文件复制到目标文件夹下"></a>将<strong>winmm.dll</strong>文件复制到目标文件夹下</h6></li>
-</ol>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904125957232.png" alt="winmm.dll"></p>
-<ol start="3">
-<li><h6 id="重启Typora-查看效果"><a href="#重启Typora-查看效果" class="headerlink" title="重启Typora,查看效果"></a>重启<em>Typora</em>,查看效果</h6></li>
-</ol>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904130113357.png" alt="效果"></p>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904130138578.png" alt="成功"></p>
-<blockquote>
-<p>下载地址：<a href="https://www.aliyundrive.com/s/k92s5gdkTeS">https://www.aliyundrive.com/s/k92s5gdkTeS</a></p>
-<p>提取密码：g72s</p>
-</blockquote>
-<p>本文链接 <a href="https://blog.ihtry.com/posts/868386938.html">https://blog.ihtry.com/posts/868386938.html</a> </p>
-]]></content>
-      <categories>
-        <category>破解</category>
-      </categories>
-      <tags>
-        <tag>Typora</tag>
-        <tag>Markdown</tag>
-        <tag>破解</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>随记_Gitbook运行出错解决</title>
-    <url>/posts/361235684.html</url>
-    <content><![CDATA[<h2 id="随记-Gitbook执行cb-apply-is-not-a-function"><a href="#随记-Gitbook执行cb-apply-is-not-a-function" class="headerlink" title="随记_Gitbook执行cb.apply is not a function"></a>随记_Gitbook执行cb.apply is not a function</h2><ul>
-<li><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3></li>
-</ul>
-<blockquote>
-<p>windows下运行<code>gitbook serve</code>提示出错</p>
-</blockquote>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904221300091.png" alt="问题"></p>
-<ul>
-<li><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3></li>
-</ul>
-<blockquote>
-<ol>
-<li>找到出错文件:<code>E:\develop\nodejs\node_global\node_modules\gitbook-cli\node_modules\npm\node_modules\graceful-fs\polyfills.js</code></li>
-<li>将62行-64行代码注释掉</li>
-</ol>
-</blockquote>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904221639683.png" alt="方法"></p>
-<ul>
-<li><h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3></li>
-</ul>
-<blockquote>
-<p>再次执行<code>gitbook serve</code>即可</p>
-</blockquote>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904221758291.png" alt="解决"></p>
-<p>本文链接 <a href="https://blog.ihtry.com/posts/361235684.html">https://blog.ihtry.com/posts/361235684.html</a> </p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>随记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>随记-SpringBoot创建遇到的问题</title>
-    <url>/posts/2302713181.html</url>
-    <content><![CDATA[<blockquote>
-<p>今天第一次接触<strong>SpringBoot</strong>，就遇到了问题，下面给大家分享一下，避一下坑</p>
-</blockquote>
-<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><blockquote>
-<p><code>idea2021</code>在创建<strong>SpringBoot</strong>项目的时候目录结构为普通目录</p>
-</blockquote>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929212104071.png" alt="如图"></p>
-<blockquote>
-<p>这里我们可以看到<code>java</code>和<code>resources</code>目录为普通目录，这样就会导致我们运行不了这个<code>SpringBoot</code>项目</p>
-</blockquote>
-<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><blockquote>
-<p>最后我通过百度等方式发现问题所在是因为我的<code>maven</code>版本和我的idea版本不兼容，然后我就换成了低版本</p>
-<p>版本信息：</p>
-<ul>
-<li>idea 2021</li>
-<li>maven 3.8.6</li>
-</ul>
-<p>这里的版本是不兼容的，所以导致一系列的问题，解决方法如下</p>
-</blockquote>
-<ul>
-<li>修改idea默认的maven版本</li>
-</ul>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929212924999.png" alt="1"></p>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929213041685.png" alt="2"></p>
-<ul>
-<li>重启idea，新建项目即可</li>
-</ul>
-<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929213308922.png" alt="成功"></p>
-<h3 id="成功"><a href="#成功" class="headerlink" title="成功"></a>成功</h3><p><img src="https://hexo.cdn.ihtry.com/images/image-20220929213436341.png" alt="success"></p>
-<p>本文链接 <a href="https://blog.ihtry.com/posts/2302713181.html">https://blog.ihtry.com/posts/2302713181.html</a> </p>
-]]></content>
-      <categories>
-        <category>随记</category>
-      </categories>
-      <tags>
-        <tag>随记</tag>
-        <tag>SpringBoot</tag>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo搭建个人博客（实战）</title>
     <url>/posts/1863780867.html</url>
     <content><![CDATA[<blockquote>
@@ -233,6 +108,131 @@ npx hexo init <span class="token operator">&lt;</span>folder<span class="token o
       <tags>
         <tag>Trojan</tag>
         <tag>小火箭</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Typora永久激活</title>
+    <url>/posts/868386938.html</url>
+    <content><![CDATA[<h1 id="Typora-永久激活-补丁"><a href="#Typora-永久激活-补丁" class="headerlink" title="Typora 永久激活(补丁)"></a>Typora 永久激活(补丁)</h1><hr>
+<blockquote>
+<p>Typora 是一款<strong>支持实时预览的 Markdown 文本编辑器</strong>。它有 OS X、Windows、Linux 三个平台的版本，并且由于仍在测试中，是<strong>完全免费</strong>的。</p>
+<p> Typora 首先是一个 Markdown 文本编辑器，它支持且仅支持 Markdown 语法的文本编辑。</p>
+</blockquote>
+<ul>
+<li><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3></li>
+</ul>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904124819576.png" alt="image-20220904124819576"></p>
+<blockquote>
+<p>点击执行文件，傻瓜式下一步安装即可</p>
+</blockquote>
+<ul>
+<li><h3 id="替换文件"><a href="#替换文件" class="headerlink" title="替换文件"></a>替换文件</h3></li>
+</ul>
+<ol>
+<li><h6 id="右键桌面Typora图标，打开文件所在位置"><a href="#右键桌面Typora图标，打开文件所在位置" class="headerlink" title="右键桌面Typora图标，打开文件所在位置"></a><strong>右键</strong>桌面<em>Typora</em>图标，打开文件所在位置</h6></li>
+</ol>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904125545766.png" alt="替换文件"></p>
+<ol start="2">
+<li><h6 id="将winmm-dll文件复制到目标文件夹下"><a href="#将winmm-dll文件复制到目标文件夹下" class="headerlink" title="将winmm.dll文件复制到目标文件夹下"></a>将<strong>winmm.dll</strong>文件复制到目标文件夹下</h6></li>
+</ol>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904125957232.png" alt="winmm.dll"></p>
+<ol start="3">
+<li><h6 id="重启Typora-查看效果"><a href="#重启Typora-查看效果" class="headerlink" title="重启Typora,查看效果"></a>重启<em>Typora</em>,查看效果</h6></li>
+</ol>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904130113357.png" alt="效果"></p>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904130138578.png" alt="成功"></p>
+<blockquote>
+<p>下载地址：<a href="https://www.aliyundrive.com/s/k92s5gdkTeS">https://www.aliyundrive.com/s/k92s5gdkTeS</a></p>
+<p>提取密码：g72s</p>
+</blockquote>
+<p>本文链接 <a href="https://blog.ihtry.com/posts/868386938.html">https://blog.ihtry.com/posts/868386938.html</a> </p>
+]]></content>
+      <categories>
+        <category>破解</category>
+      </categories>
+      <tags>
+        <tag>Typora</tag>
+        <tag>Markdown</tag>
+        <tag>破解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>随记-SpringBoot创建遇到的问题</title>
+    <url>/posts/2302713181.html</url>
+    <content><![CDATA[<blockquote>
+<p>今天第一次接触<strong>SpringBoot</strong>，就遇到了问题，下面给大家分享一下，避一下坑</p>
+</blockquote>
+<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><blockquote>
+<p><code>idea2021</code>在创建<strong>SpringBoot</strong>项目的时候目录结构为普通目录</p>
+</blockquote>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929212104071.png" alt="如图"></p>
+<blockquote>
+<p>这里我们可以看到<code>java</code>和<code>resources</code>目录为普通目录，这样就会导致我们运行不了这个<code>SpringBoot</code>项目</p>
+</blockquote>
+<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><blockquote>
+<p>最后我通过百度等方式发现问题所在是因为我的<code>maven</code>版本和我的idea版本不兼容，然后我就换成了低版本</p>
+<p>版本信息：</p>
+<ul>
+<li>idea 2021</li>
+<li>maven 3.8.6</li>
+</ul>
+<p>这里的版本是不兼容的，所以导致一系列的问题，解决方法如下</p>
+</blockquote>
+<ul>
+<li>修改idea默认的maven版本</li>
+</ul>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929212924999.png" alt="1"></p>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929213041685.png" alt="2"></p>
+<ul>
+<li>重启idea，新建项目即可</li>
+</ul>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220929213308922.png" alt="成功"></p>
+<h3 id="成功"><a href="#成功" class="headerlink" title="成功"></a>成功</h3><p><img src="https://hexo.cdn.ihtry.com/images/image-20220929213436341.png" alt="success"></p>
+<p>本文链接 <a href="https://blog.ihtry.com/posts/2302713181.html">https://blog.ihtry.com/posts/2302713181.html</a> </p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>随记</tag>
+        <tag>SpringBoot</tag>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>随记_Gitbook运行出错解决</title>
+    <url>/posts/361235684.html</url>
+    <content><![CDATA[<h2 id="随记-Gitbook执行cb-apply-is-not-a-function"><a href="#随记-Gitbook执行cb-apply-is-not-a-function" class="headerlink" title="随记_Gitbook执行cb.apply is not a function"></a>随记_Gitbook执行cb.apply is not a function</h2><ul>
+<li><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3></li>
+</ul>
+<blockquote>
+<p>windows下运行<code>gitbook serve</code>提示出错</p>
+</blockquote>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904221300091.png" alt="问题"></p>
+<ul>
+<li><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3></li>
+</ul>
+<blockquote>
+<ol>
+<li>找到出错文件:<code>E:\develop\nodejs\node_global\node_modules\gitbook-cli\node_modules\npm\node_modules\graceful-fs\polyfills.js</code></li>
+<li>将62行-64行代码注释掉</li>
+</ol>
+</blockquote>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904221639683.png" alt="方法"></p>
+<ul>
+<li><h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3></li>
+</ul>
+<blockquote>
+<p>再次执行<code>gitbook serve</code>即可</p>
+</blockquote>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20220904221758291.png" alt="解决"></p>
+<p>本文链接 <a href="https://blog.ihtry.com/posts/361235684.html">https://blog.ihtry.com/posts/361235684.html</a> </p>
+]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>随记</tag>
       </tags>
   </entry>
 </search>
