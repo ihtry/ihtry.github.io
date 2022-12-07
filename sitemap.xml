@@ -113,21 +113,21 @@
   </url>
   
   <url>
-    <loc>https://blog.ihtry.com/tags/Trojan/</loc>
+    <loc>https://blog.ihtry.com/tags/Typora/</loc>
     <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.ihtry.com/tags/%E5%B0%8F%E7%81%AB%E7%AE%AD/</loc>
+    <loc>https://blog.ihtry.com/tags/Markdown/</loc>
     <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.ihtry.com/tags/%E9%9A%8F%E8%AE%B0/</loc>
+    <loc>https://blog.ihtry.com/tags/%E7%A0%B4%E8%A7%A3/</loc>
     <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -162,21 +162,21 @@
   </url>
   
   <url>
-    <loc>https://blog.ihtry.com/tags/Typora/</loc>
+    <loc>https://blog.ihtry.com/tags/Trojan/</loc>
     <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.ihtry.com/tags/Markdown/</loc>
+    <loc>https://blog.ihtry.com/tags/%E5%B0%8F%E7%81%AB%E7%AE%AD/</loc>
     <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.ihtry.com/tags/%E7%A0%B4%E8%A7%A3/</loc>
+    <loc>https://blog.ihtry.com/tags/%E9%9A%8F%E8%AE%B0/</loc>
     <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -206,14 +206,7 @@
   </url>
   
   <url>
-    <loc>https://blog.ihtry.com/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ihtry.com/categories/%E9%9A%8F%E8%AE%B0/</loc>
+    <loc>https://blog.ihtry.com/categories/%E7%A0%B4%E8%A7%A3/</loc>
     <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -227,7 +220,14 @@
   </url>
   
   <url>
-    <loc>https://blog.ihtry.com/categories/%E7%A0%B4%E8%A7%A3/</loc>
+    <loc>https://blog.ihtry.com/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2022-12-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ihtry.com/categories/%E9%9A%8F%E8%AE%B0/</loc>
     <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
