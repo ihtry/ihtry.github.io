@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.ihtry.com/link/index.html</loc>
+    
+    <lastmod>2022-12-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ihtry.com/posts/868386938.html</loc>
+    
+    <lastmod>2022-12-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ihtry.com/posts/1863780867.html</loc>
+    
+    <lastmod>2022-12-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.ihtry.com/tags/index.html</loc>
     
     <lastmod>2022-12-07</lastmod>
@@ -12,15 +39,6 @@
   
   <url>
     <loc>https://blog.ihtry.com/categories/index.html</loc>
-    
-    <lastmod>2022-12-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ihtry.com/friends/index.html</loc>
     
     <lastmod>2022-12-07</lastmod>
     
@@ -56,25 +74,7 @@
   </url>
   
   <url>
-    <loc>https://blog.ihtry.com/posts/1863780867.html</loc>
-    
-    <lastmod>2022-12-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.ihtry.com/posts/2160956791.html</loc>
-    
-    <lastmod>2022-12-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ihtry.com/posts/868386938.html</loc>
     
     <lastmod>2022-12-06</lastmod>
     
@@ -90,6 +90,27 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://blog.ihtry.com/tags/hexo/</loc>
+    <lastmod>2022-12-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ihtry.com/tags/Github/</loc>
+    <lastmod>2022-12-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ihtry.com/tags/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2022-12-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://blog.ihtry.com/tags/Trojan/</loc>
@@ -121,27 +142,6 @@
   
   <url>
     <loc>https://blog.ihtry.com/tags/%E7%A0%B4%E8%A7%A3/</loc>
-    <lastmod>2022-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ihtry.com/tags/hexo/</loc>
-    <lastmod>2022-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ihtry.com/tags/Github/</loc>
-    <lastmod>2022-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ihtry.com/tags/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -199,6 +199,13 @@
 
   
   <url>
+    <loc>https://blog.ihtry.com/categories/%E5%AE%9E%E6%88%98/</loc>
+    <lastmod>2022-12-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.ihtry.com/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -207,13 +214,6 @@
   
   <url>
     <loc>https://blog.ihtry.com/categories/%E7%A0%B4%E8%A7%A3/</loc>
-    <lastmod>2022-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ihtry.com/categories/%E5%AE%9E%E6%88%98/</loc>
     <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
