@@ -1,6 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>云服务搭建我的世界服务器</title>
+    <url>/posts/1624682871.html</url>
+    <content><![CDATA[<div id="readmore-container"><h2 id="使用云服务器搭建我的世界（Minecraft）服务器"><a href="#使用云服务器搭建我的世界（Minecraft）服务器" class="headerlink" title="使用云服务器搭建我的世界（Minecraft）服务器"></a>使用云服务器搭建我的世界（Minecraft）服务器</h2><h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><blockquote>
+<ul>
+<li>云服务器一台（推荐2h4g以上的配置）演示的服务器为：<code>4h16g</code></li>
+<li><strong>Xshell</strong> （ssh连接工具）</li>
+<li><strong>Xftp</strong>（上传文件工具）</li>
+</ul>
+</blockquote>
+<h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><blockquote>
+<p>镜像：<code>centos 7.6</code></p>
+<p>Java：<code>Java18</code></p>
+<p>Minecraft：<code>1.19.2</code></p>
+</blockquote>
+<h3 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h3><h4 id="1-连接Xshell-Xftp"><a href="#1-连接Xshell-Xftp" class="headerlink" title="1. 连接Xshell,Xftp"></a>1. 连接<code>Xshell</code>,<code>Xftp</code></h4><p><img src="https://hexo.cdn.ihtry.com/images/image-20221207144220921.png" alt="xshell"></p>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20221207144007176.png" alt="Xftp"></p>
+<h4 id="2-放行端口"><a href="#2-放行端口" class="headerlink" title="2. 放行端口"></a>2. 放行端口</h4><blockquote>
+<p>打开服务器防火墙管理（我的是阿里云）</p>
+<p>放行端口：<code>23333</code> <code>24444</code></p>
+</blockquote>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20221207145117927.png" alt="port"></p>
+<h4 id="3-安装MCSM和web登录界面"><a href="#3-安装MCSM和web登录界面" class="headerlink" title="3. 安装MCSM和web登录界面"></a>3. 安装MCSM和web登录界面</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> -qO- https://gitee.com/mcsmanager/script/raw/master/setup.sh <span class="token operator">|</span> <span class="token function">bash</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20221207145615768.png" alt="image-20221207145615768"></p>
+<blockquote>
+<p>浏览器访问：ip:23333</p>
+</blockquote>
+<h4 id="4-安装java18"><a href="#4-安装java18" class="headerlink" title="4.  安装java18"></a>4.  安装<code>java18</code></h4><ul>
+<li>创建两个文件夹用于管理</li>
+</ul>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">mkdir</span> /opt/module
+<span class="token function">mkdir</span> /opt/software<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>将<code>jdk</code>上传通过<strong>Xftp</strong>到<code>/opt/software</code>并且解压</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">tar</span> <span class="token parameter variable">-zxvf</span> jdk包名 <span class="token parameter variable">-C</span> /opt/module<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="5-配置Java环境"><a href="#5-配置Java环境" class="headerlink" title="5. 配置Java环境"></a>5. 配置Java环境</h4><ol>
+<li>配置环境变量：<code>vim /etc/profile</code></li>
+</ol>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token assign-left variable">JAVA_HOME</span><span class="token operator">=</span>/opt/module/jdk-18.0.2.1
+<span class="token assign-left variable">JRE_HOME</span><span class="token operator">=</span><span class="token variable">$JAVA_HOME</span>/jre
+<span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$PATH</span><span class="token builtin class-name">:</span><span class="token variable">$JAVA_HOME</span>/bin:<span class="token variable">$JRE_HOME</span>/bin
+<span class="token assign-left variable">CLASSPATH</span><span class="token operator">=</span>.:<span class="token variable">$JAVA_HOME</span>/lib/dt.jar:<span class="token variable">$JAVA_HOME</span>/lib/tools.jar:<span class="token variable">$JRE_HOME</span>/lib
+<span class="token builtin class-name">export</span> JAVA_HOME JRE_HOME <span class="token environment constant">PATH</span> CLASSPATH<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol start="2">
+<li>测试安装是否成功</li>
+</ol>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20221207154105795.png" alt="image-20221207154105795"></p>
+<h4 id="6-创建服务器"><a href="#6-创建服务器" class="headerlink" title="6.创建服务器"></a>6.创建服务器</h4><blockquote>
+<p>浏览器打开：<code>ip:23333</code></p>
+<p>第一次进入会提示设置账号密码</p>
+</blockquote>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20221207154310256.png" alt="image-20221207154310256"></p>
+<h5 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h5><p><img src="https://hexo.cdn.ihtry.com/images/image-20221207154450005.png" alt="image-20221207154450005"></p>
+<h5 id="选择创建方式"><a href="#选择创建方式" class="headerlink" title="选择创建方式"></a>选择创建方式</h5><p><img src="https://hexo.cdn.ihtry.com/images/image-20221207154528740.png" alt="image-20221207154528740"></p>
+<h5 id="新增实例"><a href="#新增实例" class="headerlink" title="新增实例"></a>新增实例</h5><p><img src="https://hexo.cdn.ihtry.com/images/image-20221207154554818.png" alt="image-20221207154554818"></p>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20221207154626061.png" alt="image-20221207154626061"></p>
+<h5 id="设置参数"><a href="#设置参数" class="headerlink" title="设置参数"></a>设置参数</h5><p><img src="https://hexo.cdn.ihtry.com/images/image-20221207154746493.png" alt="image-20221207154746493"></p>
+<h5 id="实例配置详情"><a href="#实例配置详情" class="headerlink" title="实例配置详情"></a>实例配置详情</h5><p><img src="https://hexo.cdn.ihtry.com/images/image-20221207154837797.png" alt="image-20221207154837797"></p>
+<blockquote>
+<p>默认即可</p>
+</blockquote>
+<h5 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h5><p><img src="https://hexo.cdn.ihtry.com/images/image-20221207155012147.png" alt="image-20221207155012147"></p>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20221207160158353.png" alt="image-20221207160158353"></p>
+<h4 id="7-疑难杂症"><a href="#7-疑难杂症" class="headerlink" title="7.疑难杂症"></a><font color="red">7.疑难杂症</font></h4><ul>
+<li>启动失败问题</li>
+</ul>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20221207160401991.png" alt="image-20221207160401991"></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">/opt/module/jdk-18.0.2.1/bin/java <span class="token parameter variable">-jar</span> server.jar<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ul>
+<li>文件报错</li>
+</ul>
+<blockquote>
+<p>修改<code>eula.txt</code>，将<strong>false</strong>改成<strong>true</strong></p>
+</blockquote>
+<p><img src="https://hexo.cdn.ihtry.com/images/image-20221207160614632.png" alt="image-20221207160614632"></p>
+<h3 id="资源下载"><a href="#资源下载" class="headerlink" title="资源下载"></a>资源下载</h3><blockquote>
+<p>资源包含：</p>
+<p><code>jdk-18_linux-x64_bin.tar.gz</code></p>
+<p><code>server.jar</code></p>
+<p>下载地址：<a href="https://www.aliyundrive.com/s/KrfygLdyU3g">https://www.aliyundrive.com/s/KrfygLdyU3g</a></p>
+<p>提取码: 9iv6</p>
+<p>如资源失效请联系公众号客服</p>
+</blockquote>
+</div>
+
+			<link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css">
+			<script src="https://qiniu.techgrow.cn/readmore/dist/readmore.js" type="text/javascript"></script>
+			<script>
+			var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);
+			if (!isMobile) {
+				try {
+					var plugin = new ReadmorePlugin();
+					plugin.init({
+						"id": "readmore-container",
+						"blogId": "66993-5724654904722-169",
+						"name": "卫梦科技",
+						"qrcode": "https://cdn.static.ihtry.com/static/images/wx_platform.jpg",
+						"keyword": "妙妙屋",
+						"lockToc": "yes",
+						"type": "hexo",
+						"random": "1",
+						"interval": "60",
+						"expires": "7",
+						"height": "auto"
+					});
+				} catch(e) {
+					console.warn("readmore plugin occurred error: " + e.name + " | " + e.message);
+				}
+			}
+			</script>
+		]]></content>
+      <categories>
+        <category>游戏</category>
+      </categories>
+      <tags>
+        <tag>游戏</tag>
+        <tag>我的世界</tag>
+        <tag>服务器</tag>
+        <tag>实用技巧</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Trojan安装教程</title>
     <url>/posts/2160956791.html</url>
     <content><![CDATA[<h2 id="Trojan安装方法"><a href="#Trojan安装方法" class="headerlink" title="Trojan安装方法"></a>Trojan安装方法</h2><h3 id="运行安装脚本"><a href="#运行安装脚本" class="headerlink" title="运行安装脚本"></a>运行安装脚本</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">source</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> https://git.io/trojan-install<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
